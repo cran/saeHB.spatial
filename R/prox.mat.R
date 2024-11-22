@@ -1,4 +1,4 @@
-#' Proximity Matrix for Small Area Estimation under Spatial SAR Model
+#' Proximity Matrix for Small Area Estimation under Spatial Simultaneous Autoregressive (SAR) Model
 #'
 #' @description A data frame containing the proximity values for the 64 regions to simulate Small Area Estimation under Spatial SAR Model using Hierarchical Bayesian Method
 #'

@@ -3,7 +3,7 @@
 \docType{data}
 \name{sp.normNs}
 \alias{sp.normNs}
-\title{Synthetic Data for Small Area Estimation under Spatial SAR Model and Normal Distribution with non-sampled area}
+\title{Synthetic Data for Small Area Estimation under Spatial Simultaneous Autoregressive (SAR) Model and Normal Distribution with non-sampled area}
 \format{
 A data frame with 64 observations on the following 4 variables:
 \describe{

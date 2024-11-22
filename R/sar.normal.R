@@ -1,4 +1,4 @@
-#' Small Area Estimation under Spatial SAR Model and Normal Distribution using Hierarchical Bayesian Method
+#' Small Area Estimation under Spatial Simultaneous Autoregressive (SAR) Model and Normal Distribution using Hierarchical Bayesian Method
 #'
 #' @description This function gives small area estimator under Spatial SAR Model and is implemented to variable of interest (y) that assumed to be a Normal Distribution. The range of data is \eqn{(-\infty < y < \infty)}.
 #'
@@ -25,7 +25,7 @@
 #' data(sp.norm)       # Load dataset
 #' data(prox.mat)      # Load proximity Matrix
 #'
-#' \donttest{result <- spatial.normal(y ~ x1 + x2, "vardir", prox.mat, data = sp.norm)}
+#' \donttest{result <- sar.normal(y ~ x1 + x2, "vardir", prox.mat, data = sp.norm)}
 #'
 #' \donttest{result$Est}          # Small Area mean Estimates
 #' \donttest{result$refVar}       # Estimated random effect variances
@@ -49,7 +49,7 @@
 #' @import coda
 #'
 #' @export
-spatial.normal <- function(formula, vardir, proxmat, iter.update = 3, iter.mcmc = 2000, thin = 1, burn.in = 1000, coef, var.coef, data) {
+sar.normal <- function(formula, vardir, proxmat, iter.update = 3, iter.mcmc = 2000, thin = 1, burn.in = 1000, coef, var.coef, data) {
   result <- list(Est = NA, refVar = NA, coefficient = NA, plot = NA)
   formuladata <- model.frame(formula, data, na.action = NULL)
 
@@ -285,6 +285,7 @@ spatial.normal <- function(formula, vardir, proxmat, iter.update = 3, iter.mcmc 
   result$plot = list(graphics.off(), par(mar = c(2, 2, 2, 2)),
                      autocorr.plot(result_mcmc, col = "brown2", lwd = 2),
                      plot(result_mcmc, col = "brown2", lwd = 2))
+  on.exit(par(result$plot[[2]]))
   return(result)
 }
 

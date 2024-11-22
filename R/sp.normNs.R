@@ -1,4 +1,4 @@
-#' Synthetic Data for Small Area Estimation under Spatial SAR Model and Normal Distribution with non-sampled area
+#' Synthetic Data for Small Area Estimation under Spatial Simultaneous Autoregressive (SAR) Model and Normal Distribution with non-sampled area
 #'
 #' @description Synthetic data of 64 regions to simulate Small Area Estimation under Spatial SAR Model and Normal Distribution with non-sampled area using Hierarchical Bayesian Method
 #'

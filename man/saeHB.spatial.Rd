@@ -3,21 +3,21 @@
 \docType{package}
 \name{saeHB.spatial}
 \alias{saeHB.spatial}
-\title{saeHB.spatial : Small Area Estimation under Spatial SAR Model using Hierarchical Bayesian Method}
+\title{saeHB.spatial : Small Area Estimation Hierarchical Bayes For Spatial Model}
 \description{
-Provides several functions and datasets for area level of Small Area Estimation under Spatial SAR Model using Hierarchical Bayesian (HB) Method. Model-based estimators include the HB estimators based on a Spatial Fay-Herriot model with univariate normal distribution for variable of interest.The 'rjags' package is employed to obtain parameter estimates. For the reference, see Rao and Molina (2015) <doi:10.1002/9781118735855>.
+Provides several functions and datasets for area level of Small Area Estimation under Spatial Model using Hierarchical Bayesian (HB) Method. Model-based estimators include the HB estimators based on a Spatial Fay-Herriot model with univariate normal distribution for variable of interest.The 'rjags' package is employed to obtain parameter estimates. For the reference, see Rao and Molina (2015) <doi:10.1002/9781118735855>.
 }
 \section{Author(s)}{
 
 Arina Mana Sikana, Azka Ubaidillah
 
-\strong{Maintaner}: Arina Mana Sikana \email{221810195@stis.ac.id}
+\strong{Maintaner}: Arina Mana Sikana \email{sikanaradrianan@gmail.com}
 }
 
 \section{Functions}{
 
 \describe{
-  \item{\code{\link{spatial.normal}}}{This function gives small area estimator under Spatial SAR Model and is implemented to variable of interest (y) that assumed to be a Normal Distribution. The range of data is \eqn{(-\infty < y < \infty)}}.
+  \item{\code{\link{sar.normal}}}{This function gives small area estimator under Spatial SAR Model and is implemented to variable of interest (y) that assumed to be a Normal Distribution. The range of data is \eqn{(-\infty < y < \infty)}}.
 }
 }
 

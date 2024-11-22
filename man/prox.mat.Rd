@@ -3,7 +3,7 @@
 \docType{data}
 \name{prox.mat}
 \alias{prox.mat}
-\title{Proximity Matrix for Small Area Estimation under Spatial SAR Model}
+\title{Proximity Matrix for Small Area Estimation under Spatial Simultaneous Autoregressive (SAR) Model}
 \format{
 The values are numbers in the interval [0,1] containing the proximity of the row and column domains. The sum of the values of each row is equal to 1.
 }
